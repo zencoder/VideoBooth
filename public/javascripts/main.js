@@ -96,6 +96,8 @@ VideoBooth.prototype.upload = function(cb) {
   var filename = this.filename = Date.now() + '.webm';
   var $uploadProgress = $(this.uploadEl);
 
+  $uploadProgress.text('0%');
+
   // Grab a signed URL from the backend
   $.post('/upload', { key: filename }).done(function(data) {
     formUpload(data.url, data.cors.key, data.cors.policy, data.cors.signature, filename, recording);
