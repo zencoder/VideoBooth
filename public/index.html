@@ -1,0 +1,41 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>VideoBooth</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="logo-banner text-center">
+      <img src="/images/videobooth.png" alt="videobooth" />
+    </div>
+    
+    <div class="container">
+      <div id="alerts"></div>
+
+      <p>
+        <a id="get-user-media" class="btn btn-lg btn-block btn-primary">Get Media</a>
+        <a id="record" class="btn btn-danger hidden">Record <span id="countdown"></span></a>
+        <a id="upload" class="btn btn-success hidden">Upload <span id="upload-progress"></span></a>
+        <a id="process" class="btn btn-info hidden">Email it!</a>
+      </p>
+
+      <div class="row">
+        <div class="col-md-6">
+          <video id="user-media" autoplay muted width="100%"></video>
+        </div>
+        <div class="col-md-6">
+          <video id="recorded-media" autoplay controls width="100%" class="hidden"></video>
+        </div>
+      </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="/javascripts/main.js"></script>
+  </body>
+</html>

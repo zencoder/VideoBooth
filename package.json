@@ -1,0 +1,16 @@
+{
+  "name": "VideoBooth",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.0.8",
+    "body-parser": "~1.0.0",
+    "express": "~4.2.0",
+    "moment": "^2.7.0",
+    "morgan": "~1.0.0",
+    "zencoder": "^1.0.0"
+  }
+}

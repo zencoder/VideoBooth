@@ -1,0 +1,17 @@
+.recording {
+  border: 3px solid red;
+}
+
+.hidden {
+  display: none;
+}
+
+.logo-banner {
+  background-color: #000;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.logo-banner img {
+  max-width: 100%;
+}
