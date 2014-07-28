@@ -45,7 +45,7 @@ VideoBooth.prototype.showMedia = function(stream) {
 
 VideoBooth.prototype.start = function(seconds, cb) {
   if (!this.stream) { throw new Error('No stream available to record'); }
-  if (!window.MediaRecorder) { throw new Error("This browser doesn't support MediaRecorder :("); }
+  if (!window.MediaRecorder) { alert("This browser doesn't support MediaRecorder. :( Firefox only for now!"); }
 
   this.recorder = new MediaRecorder(this.stream);
   this.recorder.start();
